@@ -1,0 +1,64 @@
+* {
+    box sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #d9d9d9;
+}
+
+h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 27px;
+    color: #09bb9f;
+    text-align: center;
+    padding: 40px;
+}
+
+article {
+    width: 320px;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+p, li {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+#chart-container {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+#salon {
+    text-align: center;
+}
+
+#attribution {
+    text-align: right;
+    margin-right: 400px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 11px;
+}
