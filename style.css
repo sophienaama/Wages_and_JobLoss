@@ -19,7 +19,7 @@ html, body {
 }
 
 .banner {
-    max-width: 85%;
+    max-width: 89%;
     border-bottom: solid #909090 10px;
     margin: auto;
     padding-left: 320px;
@@ -38,24 +38,24 @@ html, body {
 .headline_container {
     height: 100%;
     width: 40%;
+    padding-top: 60px;
 }
 
 h2 {
     font-family: tasman, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 6em;
+    font-size: 5em;
     line-height: .9em;
     color: #222222;
     text-align: left;
-    padding-top: 40px;
 }
 
 h3 {
     font-family: tasman, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #222222;
+    color: #909090;
     text-align: left;
     border-bottom: solid #ff5c16 5px;
     padding-bottom: 20px;
@@ -65,6 +65,10 @@ h3 {
     height: 100%;
     width: 40%;
     padding-top: 130px;
+}
+
+.byline {
+    font-family: tasman, sans-serif;
 }
 
 .text {
@@ -84,6 +88,12 @@ h3 {
     margin: auto;
     text-align: center;
     padding: 40px;
+}
+
+.womanicon {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 /*********************************************************************
