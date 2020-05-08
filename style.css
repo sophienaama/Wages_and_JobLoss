@@ -1,64 +1,103 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
 * {
-    box sizing: border-box;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #d9d9d9;
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
 }
 
-h1 {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    padding: 20px;
+.story_container {
+    max-width: 100%;
+    margin: 10px;
+    border: solid #ff5c16 20px;
+}
+
+.banner {
+    max-width: 85%;
+    border-bottom: solid #909090 10px;
+    margin: auto;
+    padding-left: 320px;
+    font-family: tablet-gothic-wide, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+    color: #909090;
+}
+
+.topper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headline_container {
+    height: 100%;
+    width: 40%;
 }
 
 h2 {
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 27px;
-    color: #09bb9f;
+    font-family: tasman, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 6em;
+    line-height: .9em;
+    color: #222222;
+    text-align: left;
+    padding-top: 40px;
+}
+
+h3 {
+    font-family: tasman, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #222222;
+    text-align: left;
+    border-bottom: solid #ff5c16 5px;
+    padding-bottom: 20px;
+}
+
+.chart-container {
+    height: 100%;
+    width: 40%;
+    padding-top: 130px;
+}
+
+.text {
+    font-family: tasman, sans-serif;
+    display: block;
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 1.25em;
+}
+
+.img1_salon {
+    display: block;
+    margin: auto;
     text-align: center;
     padding: 40px;
 }
 
-article {
-    width: 320px;
-    margin: 0px auto;
-    margin-top: 30px;
-    padding: 20px;
-    border: 2px solid black;
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 }
 
-p, li {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-iframe {
-    display: block;
-    margin: auto;
-}
-
-#chart-container {
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 20px;
-}
-
-#salon {
-    text-align: center;
-}
-
-#attribution {
-    text-align: right;
-    margin-right: 400px;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 11px;
-}
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+    /*
