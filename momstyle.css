@@ -1,0 +1,178 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.story_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: solid #ff5c16 20px;
+}
+
+.banner {
+    max-width: 1000px;
+    border-bottom: solid #909090 10px;
+    margin: 0 auto 75px;
+}
+
+h1 {
+    font-family: tablet-gothic-wide, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3em;
+    color: #909090;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.topper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.headline_container {
+    flex-basis: 100%;
+    order: 1;
+}
+
+.chart-container {
+    flex-basis: 100%;
+    order: 2;
+}
+
+.chart-container, .headline_container {
+    padding: 25px;
+}
+
+h2 {
+    font-family: tasman, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5em;
+    line-height: .9em;
+    color: #222222;
+    margin: 0;
+}
+
+h3 {
+    font-family: tasman, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #909090;
+    text-align: left;
+    border-bottom: solid #ff5c16 5px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-family: tasman, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #909090;
+    text-align: center;
+}
+
+.byline {
+    font-family: tasman, sans-serif;
+}
+
+p {
+    font-family: tasman, sans-serif;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.img1_salon {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.womanicon {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+iframe.responsive {
+    width: 100%;
+    border: 0;
+    min-height: 60vh;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 25px;
+    background: grey;
+    outline: none;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ff5c16;
+    cursor: pointer;
+}
+
+.show {
+    opacity: 1;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .chart-container {
+        order: 1;
+        flex-basis: 40%;
+    }
+
+    .headline_container {
+        order: 2;
+        flex-basis: 40%;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+    /*

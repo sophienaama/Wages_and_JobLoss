@@ -15,7 +15,7 @@
     <!-- Your styles should be called here -->
     <link rel="stylesheet" href="https://use.typekit.net/slm6jlb.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-
+    <link rel="stylesheet" href="momstyle.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -73,19 +73,60 @@
         <p>Below, we've designed a calculator for you to determine the value of your unpaid work.
 
           Please move the slider to reflect how much time you spend on each of the following each day.</p>
-      </div>
 
-      <div class="womanicon">
-        <img src="img/woman.png">
-      </div>
+        <div class="content budget">
+          <div class="task">
+            <h4><span>Preparing Meals/Cooking</span></h4>
+            <div class="slider" data-rate="12">
 
-    </div>
+              <!--Slider-->
+              <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cooking_time">
+              <p>Value: <span></span></p>
+            </div>
+          </div>
 
-    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <div class="content budget">
+            <div class="task">
+              <h4><span>Homeschooling or Educating Your Kids</span></h4>
+              <div class="slider" data-rate="29.52">
 
-    <!-- Your javascript should be called here -->
+                <!--Slider-->
+                <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="teaching_time">
+                <p>Value: <span></span></p>
+              </div>
+            </div>
 
+            <div class="content budget">
+              <div class="task">
+                <h4><span>Cleaning the House</span></h4>
+                <div class="slider" data-rate="13">
+
+                  <!--Slider-->
+                  <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cleaning_time">
+                  <p>Value: <span></span></p>
+                </div>
+              </div>
+
+
+              <div class="salary">
+                <br>
+                <p>Your additional unpaid income is equal to: <span id="money_output"></span></p>
+
+
+              </div>
+            </div>
+
+            <div class="womanicon">
+              <img src="img/woman.png">
+            </div>
+
+          </div>
+
+          <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+          <!-- Your javascript should be called here -->
+          <script src="main.js"></script>
   </body>
 
 </html>
