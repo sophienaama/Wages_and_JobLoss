@@ -1,137 +1,54 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
 
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
-}
-
-img {
-    width: 100%;
-}
-
-.story_container {
-    max-width: 1200px;
-    margin: 0 auto;
-    border: solid #ff5c16 20px;
-}
-
-.banner {
-    max-width: 1000px;
-    border-bottom: solid #909090 10px;
-    margin: 0 auto 75px;
-}
-
-h1 {
-    font-family: tablet-gothic-wide, sans-serif;
+h4 {
+    font-family: tasman, sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 3em;
-    color: #909090;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+    color: #40ABE0;
+    text-align: left;
+    font-size: 1.3em;
 }
 
-.topper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+h5 {
+    font-family: tasman, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ff5c16;
+    text-align: left;
+    font-size: 2em;
 }
 
-.headline_container {
-    flex-basis: 100%;
-    order: 1;
-}
-
-.chart-container {
-    flex-basis: 100%;
-    order: 2;
-}
-
-.chart-container, .headline_container {
-    padding: 25px;
-}
-
-h2 {
+h6 {
     font-family: tasman, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 3.5em;
-    line-height: .9em;
-    color: #222222;
-    margin: 0;
-}
-
-h3 {
-    font-family: tasman, sans-serif;
-    font-weight: 700;
-    font-style: normal;
     color: #909090;
     text-align: left;
-    border-bottom: solid #ff5c16 5px;
-    padding-bottom: 20px;
-}
-
-h4 {
-    font-family: tasman, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #909090;
-    text-align: center;
-}
-
-.byline {
-    font-family: tasman, sans-serif;
-}
-
-p {
-    font-family: tasman, sans-serif;
-    padding: 10px;
-    text-align: left;
-    line-height: 1.5em;
-    font-size: 1.25em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.img1_salon {
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 40px;
-}
-
-.womanicon {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-iframe.responsive {
-    width: 100%;
-    border: 0;
-    min-height: 60vh;
+    font-size: 1.2em;
 }
 
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 80%;
-    height: 25px;
-    background: grey;
     outline: none;
     opacity: 0.9;
     -webkit-transition: .2s;
     transition: opacity .2s;
+}
+
+.slider input {
+    display: block;
+    width: 100%;
+    background: grey;
 }
 
 .slider::-webkit-slider-thumb {
@@ -139,34 +56,39 @@ iframe.responsive {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #ff5c16;
+    background: #40ABE0;
+    ;
     cursor: pointer;
+}
+
+.calculator_container {
+    padding: 0 150px;
+}
+
+.content.budget {
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
 }
 
 .show {
     opacity: 1;
 }
 
+#money_output {
+    font-family: tasman, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #40ABE0;
+    text-align: left;
+    font-size: 1.3em;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
-
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    .chart-container {
-        order: 1;
-        flex-basis: 40%;
-    }
-
-    .headline_container {
-        order: 2;
-        flex-basis: 40%;
-    }
-
-    h2 {
-        font-size: 5em;
-    }
 }
 
 /*********************************************************************
@@ -175,4 +97,4 @@ iframe.responsive {
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
-    /*
+}

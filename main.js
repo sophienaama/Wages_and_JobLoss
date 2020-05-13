@@ -38,10 +38,10 @@ function recalculate() {
 		const this_slider_container = this_slider.closest("div.slider");
 		const value = this_slider.val();
 		const rate = parseFloat(this_slider_container.data('rate'));
-		calc_total = calc_total + (value * rate * 3);
+		calc_total = calc_total + (value * rate * 30);
 
 		if (calc_total != 0) { //checks to see if calc_total has a value.
-			output = "$" + calc_total
+			output = "$" + calc_total.toFixed(2)
 			document.getElementById("money_output").innerHTML = (output)
 		}
 	});

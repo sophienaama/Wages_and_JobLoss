@@ -29,7 +29,7 @@
     <div class="story_container">
 
       <div class="banner">
-        <h1>COVID-19 and Women</h1>
+        <h1>COVID-19 AND WOMEN</h1>
       </div>
 
       <div class="topper">
@@ -47,86 +47,76 @@
       </div>
 
       <div class="text">
-        <p>Claire Song, a web designer in Hoboken, New Jersey, spent a lot of time at home doing her work last week as usual. Since the coronavirus changed the landscape of working places – the increase of home working, she was not the only one who
-          spent the whole week at home. Her husband, who works for Logistics, also stayed at home. While both of her and her husband worked at home, she cooked three times a day, did laundry on Wednesday and Friday, and vacuumed the house every other
+        <p>Claire Song, a web designer in Hoboken, New Jersey, spent a lot of time at home doing her work last week as usual. But since the coronavirus changed the landscape of work spaces, – the increase of home working, Song isn't the only one
+          spending the whole week at home. Her husband, who works for Logistics, also stayed at home. While both her and her husband worked at home, she is in charge of cooking three times a day, doing laundry twice a week, and vacuuming every other
           day.</p>
 
-        <p>“Definitely I have more daily chores these days,” said Song. “One thing that has never changed. I’m the one who’s taking more time for domestic work.” Song is not the only woman who spends more time for household chores under the
-          stay-at-home orders."</p>
+        <p>“Definitely I have more daily chores these days,” said Song. “One thing that hasn't changed: I’m the one who’s taking more time for domestic work.” Song is not the only woman who spends more time for household chores under the country's
+          widespread stay-at-home orders."</p>
 
-        <p>Lockdowns amid the coronavirus left many people to work from home, be furloughed or be unemployed. Parents need to be teachers and playmates for their children because schools close. The burdens of cooking, cleaning, childcare and every
-          necessary works for keeping a household running are largely falling on women in heterosexual couples.</p>
+        <p>Lockdowns amid the coronavirus have forced many to work from home, or caused them to be furloughed or even without a job. Parents need to be teachers and playmates for their children because schools are closed. The burdens of cooking,
+          cleaning and childcare tend to fall on the women in heterosexual couples.</p>
 
-
-        <p>“This is a total disaster to moms like me,” said Stella Wayne, a mother of two kids who works as an office worker at a tax account office in Orlando, Florida. She said that she is not the only mom who’s juggling childcare and work at home
-          after children stopped going to school due to the pandemic. Because she is the most skilled at cooking and cleaning, she usually manages more household affairs than any others at home. “My husband helps me to manage all the things, but
-          literally, he helps. Not sharing.”</p>
-
-        <p>OECD data has already showed that women in the United States spend 1.6 times more than men for unpaid work; men spend about 17.5 hours a week, and women spend about 28.4 hours a week doing unpaid labor. Also, the United Nations also
-          reported that women do 2.6 times much unpaid domestic works and caregiving than men in heterosexual partners.</p>
-
-        <p>The Bureau of Statistics’ 2019 data gives a hunch about how much women can be compensated for their “invisible works” at home by suggesting the average payment of maids and housekeeping cleaners. For instance, national average payment for
-          housekeeping professionals is $11.84 an hour, and for childcare workers is $10.18 an hour. This means that if Song spent 3 hours for cooking, 2 hours for doing laundry, and an hour for cleaning her house on last Wednesday, her time and
-          effort on that day was worth the housekeepers’ pay of $71.04. Because Song said that she spends at least 3 more hours a day keeping her households running, the compensation for her unpaid labor amid the pandemic should increase as much as
-          the worth of $35.52.</p>
-
-        <p>Below, we've designed a calculator for you to determine the value of your unpaid work.
-
-          Please move the slider to reflect how much time you spend on each of the following each day.</p>
-
-        <div class="content budget">
-          <div class="task">
-            <h4><span>Preparing Meals/Cooking</span></h4>
-            <div class="slider" data-rate="12">
-
-              <!--Slider-->
-              <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cooking_time">
-              <p>Value: <span></span></p>
-            </div>
-          </div>
+        <div class="calculator_container">
 
           <div class="content budget">
+            <div class="task">
+              <h5>Calculate the Cost of Your Invisible Labor</h5>
+              <h6>Below, we've designed a calculator for you to determine the value of your unpaid work.
+                Please move the slider to reflect how many hours, on average, you spend on each task every day.</h6>
+              <h4><span>Preparing Meals/Cooking</span></h4>
+              <div class="slider" data-rate="12">
+
+                <!--Slider-->
+                <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cooking_time">
+                <h4>Value: <span></span></h4>
+              </div>
+            </div>
             <div class="task">
               <h4><span>Homeschooling or Educating Your Kids</span></h4>
               <div class="slider" data-rate="29.52">
 
                 <!--Slider-->
                 <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="teaching_time">
-                <p>Value: <span></span></p>
+                <h4>Value: <span></span></h4>
               </div>
             </div>
+            <div class="task">
+              <h4><span>Cleaning the House</span></h4>
+              <div class="slider" data-rate="13">
 
-            <div class="content budget">
-              <div class="task">
-                <h4><span>Cleaning the House</span></h4>
-                <div class="slider" data-rate="13">
-
-                  <!--Slider-->
-                  <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cleaning_time">
-                  <p>Value: <span></span></p>
-                </div>
-              </div>
-
-
-              <div class="salary">
-                <br>
-                <p>Your additional unpaid income is equal to: <span id="money_output"></span></p>
-
-
+                <!--Slider-->
+                <input type="range" min="00" max="12" value="0" step=".25" class="slider" id="cleaning_time">
+                <h4>Value: <span></span></h4>
               </div>
             </div>
-
-            <div class="womanicon">
-              <img src="img/woman.png">
+            <div class="salary">
+              <h5>If you were compensated for your at-home labor, each month you would take home an additional <span id="money_output"></span></h5>
             </div>
-
           </div>
+        </div>
 
-          <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <br>
+        <p>“This is a total disaster to moms like me,” said Stella Wayne, a mother of two kids who works as an office worker at a tax account office in Orlando, Florida. She said that she is not the only mom who’s juggling childcare and work at home
+          after children stopped going to school due to the pandemic. Because she is the most skilled at cooking and cleaning, she usually manages more household affairs than any others at home. “My husband helps me to manage all the things, but
+          literally, he helps. Not sharing.”</p>
 
-          <!-- Your javascript should be called here -->
-          <script src="main.js"></script>
+        <p>OECD data has already showed that women in the United States spend 1.6 times more than men for unpaid work; men spend about 17.5 hours a week, and women spend about 28.4 hours a week doing unpaid labor. The United Nations also
+          reported that women do 2.6 times more unpaid domestic works and caregiving than men.</p>
+
+        <br>
+        <br>
+
+        <div class="womanicon">
+          <img src="img/woman.png">
+        </div>
+      </div>
+
+      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Your javascript should be called here -->
+      <script src="main.js"></script>
   </body>
 
 </html>
