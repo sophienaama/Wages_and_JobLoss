@@ -7,13 +7,17 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
 }
 
 img {
-    width: 100%;
+    width: 50px;
 }
 
 .story_container {
@@ -25,7 +29,7 @@ img {
 .banner {
     max-width: 1000px;
     border-bottom: solid #909090 10px;
-    margin: 0 auto 75px;
+    margin: 0 auto 10px;
 }
 
 h1 {
@@ -43,31 +47,23 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .headline_container {
     flex-basis: 100%;
-    order: 1;
-}
-
-.chart-container {
-    flex-basis: 100%;
-    order: 2;
-    margin-top: 10px;
-}
-
-.chart-container, .headline_container {
-    padding: 25px;
+    width: 50%;
+    margin-left: 60px;
+    padding: 20px;
 }
 
 h2 {
     font-family: tasman, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: .9em;
     color: #222222;
-    margin: 0;
 }
 
 h3 {
@@ -77,16 +73,21 @@ h3 {
     color: #909090;
     text-align: left;
     border-bottom: solid #ff5c16 5px;
-    padding-bottom: 20px;
 }
 
 .byline {
     font-family: tasman, sans-serif;
 }
 
-p, .img1_salon_attribute {
+.topperbyline {
+    font-family: tablet gothic, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px;
+}
+
+p {
     font-family: tasman, sans-serif;
-    padding: 10px;
     text-align: left;
     line-height: 1.5em;
     font-size: 1.25em;
@@ -94,26 +95,12 @@ p, .img1_salon_attribute {
     margin: 0 auto;
 }
 
-.img1_salon {
-    display: block;
-    margin: auto;
-    text-align: center;
-    padding: 40px;
-}
-
 .womanicon {
-    width: 50px;
+    width: 100%;
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 50px;
     max-width: 150px;
     margin: 0 auto;
-}
-
-iframe {
-    width: 100%;
-    border: 0;
-    min-height: 60vh;
 }
 
 /*********************************************************************
@@ -123,18 +110,12 @@ iframe {
 
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    .chart-container {
-        order: 1;
-        flex-basis: 40%;
-    }
-
     .headline_container {
-        order: 2;
         flex-basis: 40%;
     }
 
     h2 {
-        font-size: 5em;
+        font-size: 3em;
     }
 }
 
