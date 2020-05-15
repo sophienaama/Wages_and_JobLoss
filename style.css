@@ -84,7 +84,7 @@ h3 {
     font-family: tasman, sans-serif;
 }
 
-p {
+p, .img1_salon_attribute {
     font-family: tasman, sans-serif;
     padding: 10px;
     text-align: left;
@@ -102,9 +102,10 @@ p {
 }
 
 .womanicon {
-    width: 100%;
+    width: 50px;
     text-align: center;
     padding-bottom: 50px;
+    padding-top: 50px;
     max-width: 150px;
     margin: 0 auto;
 }
