@@ -36,6 +36,21 @@ h6 {
     font-size: 1.2em;
 }
 
+.headline_container {
+    flex-basis: 100%;
+    order: 1;
+}
+.photo {
+    flex-basis: 100%;
+    order: 2;
+    padding: 25px;
+    max-width: 464px;
+    margin:0;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+
 .slider {
     -webkit-appearance: none;
     appearance: none;
@@ -89,6 +104,17 @@ h6 {
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    
+.photo {
+    order: 2;
+    flex-basis: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.headline_container {
+    order: 1;
+    flex-basis: 40%;
 }
 
 /*********************************************************************
