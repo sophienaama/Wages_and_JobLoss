@@ -28,10 +28,6 @@
     padding: 1% 10%
 }
 
-.byline {
-    padding: 1% 10%
-}
-
 .h3 {
     text-align: center;
 }
@@ -59,7 +55,7 @@
 }
 
 .dot.orange {
-    background-color: rgba(255, 133, 25, 0.65)
+    background-color: white;
 }
 
 .dot.blue {
@@ -85,14 +81,15 @@
     position: absolute;
     width: 100%;
     padding: 5px;
+    background-color: rgba(112, 127, 135, 0.5)
 }
 
 .dot .close {
     position: absolute;
-    top: 10px;
+    top: 40px;
     right: 10px;
     text-decoration: none;
-    color: #FFF;
+    color: #707f87;
 }
 
 .dot .close:after {
@@ -112,13 +109,8 @@
 }
 
 .dot.mask {
-    top: 13%;
-    right: 47%;
-}
-
-.dot.chin {
-    top: 13%;
-    right: 10%;
+    top: 60%;
+    right: 40%;
 }
 
 .dot.gown {
