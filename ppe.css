@@ -1,0 +1,167 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+.video-container {
+    position: relative;
+    height: 0;
+    display: block;
+    padding-bottom: 56.25%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.annotatedimage_container {
+    position: relative;
+}
+
+.headline_container {
+    padding: 1% 10%
+}
+
+.byline {
+    padding: 1% 10%
+}
+
+.h3 {
+    text-align: center;
+}
+
+/* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+.dot {
+    /** Sets an equal height and width and sets border-radius to 50%,
+     * all of which combined makes a perfect circle */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* Position absolute so we can place it anywhere */
+    position: absolute;
+    display: block;
+    /* Adds a translucent white border for easier visibility */
+    border: 3px solid rgba(255, 255, 255, 1);
+    /* Animates circle to overlay */
+    transition: all 0.5s ease-in-out;
+    /* All text inside is white */
+    color: #FFF;
+    /* Contains content when closing the overlay */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dot.orange {
+    background-color: rgba(255, 133, 25, 0.65)
+}
+
+.dot.blue {
+    background-color: rgba(0, 93, 255, 0.65)
+}
+
+.dot.green {
+    background-color: rgba(12, 232, 196, 0.65)
+}
+
+.dot .inner {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.dot .inner .content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+}
+
+.dot .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.dot .close:after {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    content: "\f00d";
+}
+
+.dot.wrist {
+    right: 80%;
+    bottom: 10%;
+}
+
+.dot.palm {
+    top: 50%;
+    left: 30%;
+}
+
+.dot.mask {
+    top: 13%;
+    right: 47%;
+}
+
+.dot.chin {
+    top: 13%;
+    right: 10%;
+}
+
+.dot.gown {
+    bottom: 10%;
+    right: 25%;
+}
+
+.img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/*****************************
+* Dot customizations go here
+******************************/
+/*********************************
+ * For when .dot has been clicked
+**********************************/
+.dot.active {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    z-index: 2;
+}
+
+.dot.active .inner {
+    opacity: 1;
+}
+
+/*********************************************************************
+      YOUR TABLET/DESKTOP STYLES GO HERE
+    *********************************************************************/
+@media(min-width: 681px) {}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
