@@ -1,0 +1,139 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+h2 {
+    font-size: 3em;
+}
+
+h4 {
+    font-family: tasman, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #40ABE0;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+h5 {
+    font-family: tasman, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #ff5c16;
+    text-align: left;
+    font-size: 2em;
+}
+
+h6 {
+    font-family: tasman, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #909090;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.headline_container {
+    flex-basis: 100%;
+    order: 1;
+}
+
+.photo {
+    flex-basis: 100%;
+    order: 2;
+    padding: 25px;
+    max-width: 464px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider input {
+    display: block;
+    width: 100%;
+    background: grey;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #40ABE0;
+    ;
+    cursor: pointer;
+}
+
+.content.budget {
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+
+.show {
+    opacity: 1;
+}
+
+#money_output {
+    font-family: tasman, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #40ABE0;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.calculator_container {
+    padding: 0 20px;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .photo {
+        order: 2;
+        flex-basis: 40%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .headline_container {
+        order: 1;
+        flex-basis: 40%;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+    .calculator_container {
+        padding: 0 150px;
+    }
+}
