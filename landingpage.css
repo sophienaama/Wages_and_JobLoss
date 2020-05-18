@@ -16,10 +16,6 @@ html, body {
     font-size: 16px;
 }
 
-img {
-    width: 50px;
-}
-
 .story_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -57,6 +53,21 @@ h1 {
     padding: 20px;
 }
 
+.topper .topperbyline, .topper .image {
+    flex-basis: 100%;
+}
+
+.topper .image {
+    /*background-color: rgba(255, 85, 0, 1);*/
+}
+
+.topper .image img {
+    max-height: 50vh;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 h2 {
     font-family: tasman, sans-serif;
     font-weight: 500;
@@ -81,7 +92,8 @@ h3 {
 
 .topperbyline {
     font-family: tablet gothic, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-style: bold;
     text-align: center;
     padding: 50px;
 }
@@ -92,14 +104,6 @@ p {
     line-height: 1.5em;
     font-size: 1.25em;
     max-width: 800px;
-    margin: 0 auto;
-}
-
-.womanicon {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 50px;
-    max-width: 150px;
     margin: 0 auto;
 }
 

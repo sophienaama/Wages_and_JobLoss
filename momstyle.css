@@ -9,6 +9,10 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
+h2 {
+    font-size: 3em;
+}
+
 h4 {
     font-family: tasman, sans-serif;
     font-weight: 900;
@@ -40,16 +44,16 @@ h6 {
     flex-basis: 100%;
     order: 1;
 }
+
 .photo {
     flex-basis: 100%;
     order: 2;
     padding: 25px;
     max-width: 464px;
-    margin:0;
+    margin: 0;
     text-align: center;
     font-size: 0.75em;
 }
-
 
 .slider {
     -webkit-appearance: none;
@@ -76,10 +80,6 @@ h6 {
     cursor: pointer;
 }
 
-.calculator_container {
-    padding: 0 150px;
-}
-
 .content.budget {
     border-top: 4px solid #000;
     border-bottom: 4px solid #000;
@@ -98,29 +98,42 @@ h6 {
     font-size: 1.3em;
 }
 
+.calculator_container {
+    padding: 0 20px;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    
-.photo {
-    order: 2;
-    flex-basis: 40%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+    .photo {
+        order: 2;
+        flex-basis: 40%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
-.headline_container {
-    order: 1;
-    flex-basis: 40%;
+    .headline_container {
+        order: 1;
+        flex-basis: 40%;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
 }
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
 @media(min-width: 729px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
+    .calculator_container {
+        padding: 0 150px;
+    }
 }
