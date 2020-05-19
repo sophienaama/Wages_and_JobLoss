@@ -51,6 +51,7 @@ h1 {
     width: 50%;
     margin-left: 60px;
     padding: 20px;
+    margin-top: 60px;
 }
 
 .topper .topperbyline, .topper .image {
@@ -87,13 +88,15 @@ h3 {
 }
 
 .byline {
-    font-family: tasman, sans-serif;
+    font-family: tasman bold, sans-serif;
+    weight: 400;
 }
 
 .topperbyline {
     font-family: tablet gothic, sans-serif;
     font-size: 1em;
     font-style: bold;
+    font-weight: 600;
     text-align: center;
     padding: 50px;
 }
