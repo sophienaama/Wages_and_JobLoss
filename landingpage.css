@@ -50,7 +50,7 @@ h1 {
     flex-basis: 100%;
     width: 50%;
     margin-left: 60px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .topper .topperbyline, .topper .image {
@@ -58,11 +58,15 @@ h1 {
 }
 
 .topper .image {
-    /*background-color: rgba(255, 85, 0, 1);*/
+    background-color: rgba(255, 85, 0, 1);
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px
 }
 
 .topper .image img {
-    max-height: 50vh;
+    max-height: 100vh;
     width: auto;
     display: block;
     margin: 0 auto;
@@ -95,7 +99,7 @@ h3 {
     font-size: 1em;
     font-style: bold;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 p {
@@ -115,7 +119,7 @@ p {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
     .headline_container {
-        flex-basis: 40%;
+        flex-basis: 50%;
     }
 
     h2 {
